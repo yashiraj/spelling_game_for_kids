@@ -38,8 +38,6 @@ for(let i = 0; i < allButtonClicks; i++){
         } else {
             console.log("Pig button was not clicked!")
         };
-
-    });
-  
+    }); 
 };
 
