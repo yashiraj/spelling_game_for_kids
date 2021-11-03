@@ -1,4 +1,6 @@
 
+//logic for button audio: 
+
 const allButtonClicks = document.querySelectorAll('.button').length
 
 for(let i = 0; i < allButtonClicks; i++){
@@ -40,4 +42,7 @@ for(let i = 0; i < allButtonClicks; i++){
         };
     }); 
 };
+
+
+
 
