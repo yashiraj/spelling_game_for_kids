@@ -30,5 +30,18 @@ for(let i = 0; i < grabCatSectionCards.length; i++){
    })
 }
 
-//**************** DOG SECTION ********************** 
+//**************** COW SECTION ********************** 
+
+const grabCowSectionCards = document.querySelectorAll('.cow_section_cards');
+for(let i = 0; i < grabCowSectionCards.length; i++){
+    const listenEachCowCard = document.querySelectorAll('.cow_section_cards')[i];    
+    listenEachCowCard.addEventListener('click', function(){
+        console.log(this.innerHTML)
+        if(this.innerHTML === "cow"){
+            alert("You got it right, great job!")
+        } else {
+            alert("Give it another try!")
+        }
+    })
+}
 
