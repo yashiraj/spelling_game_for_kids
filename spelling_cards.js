@@ -1,31 +1,34 @@
 
-// ************** ANT SECTION 
+// ************** ANT SECTION *****************************
 
-// const grabAllCards = document.querySelectorAll('.card_name_1').length
-
-//     for(let i = 0; i < grabAllCards; i++){
-//         const listenEachCard = document.querySelectorAll('.card_name_1')[i];
-//         console.log(listenEachCard)
-//         const catCard = listenEachCard.addEventListener('click', function(){
-//             console.log("The cat card has been clicked!");
-//             if(this.innerHTML === "cat"){
-//                 console.log("You got it right!")
-//             }
-//         })
-
-//     };
-
-
-const grabAntSectionCards = document.querySelectorAll('.ant_section_cards').length
+const grabAntSectionCards = document.querySelectorAll('.ant_section_cards').length;
 
 for(let i = 0; i < grabAntSectionCards; i++){
     const listenEachAntCard = document.querySelectorAll('.ant_section_cards')[i];
     listenEachAntCard.addEventListener('click', function(){
-        console.log(this.innerHTML)
+        console.log(this.innerHTML);
         if(this.innerHTML === "ant"){
-            alert("You got it right! Great job!")
+            alert("You got it right! Great job!");
         } else {
-            alert("Give it another try!")
+            alert("Give it another try!");
         }
     })
 }
+
+// ************** CAT SECTION ***********************
+
+const grabCatSectionCards = document.querySelectorAll('.cat_section_cards');
+for(let i = 0; i < grabCatSectionCards.length; i++){
+   const listenEachCatCard = document.querySelectorAll('.cat_section_cards')[i];
+   listenEachCatCard.addEventListener('click', function(){
+       console.log(this.innerHTML)
+       if(this.innerHTML=== 'cat'){
+           alert("You got it right, great job!")
+       }else{
+           alert("Give it another try!")
+       }
+   })
+}
+
+//**************** DOG SECTION ********************** 
+
