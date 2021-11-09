@@ -22,7 +22,7 @@ for(let i = 0; i < grabCatSectionCards.length; i++){
    const listenEachCatCard = document.querySelectorAll('.cat_section_cards')[i];
    listenEachCatCard.addEventListener('click', function(){
        console.log(this.innerHTML);
-       if(this.innerHTML=== 'cat'){
+       if(this.innerHTML=== "cat"){
            alert("You got it right, great job!");
        }else{
            alert("Give it another try!");
@@ -30,7 +30,7 @@ for(let i = 0; i < grabCatSectionCards.length; i++){
    });
 };
 
-//**************** COW SECTION ********************** 
+// **************** COW SECTION ********************** 
 
 const grabCowSectionCards = document.querySelectorAll('.cow_section_cards');
 for(let i = 0; i < grabCowSectionCards.length; i++){
@@ -62,4 +62,19 @@ for(let i = 0; i < grabDogSectionCards.length; i++){
 }
 
 
+// ******************** PIG SECTION ***********************
 
+const grabPigSectionCards = document.querySelectorAll('.pig_section_cards');
+console.log(grabPigSectionCards);
+
+for(let i = 0; i < grabPigSectionCards.length; i++){
+   const listenEachPigCard = document.querySelectorAll('.pig_section_cards')[i];
+   listenEachPigCard.addEventListener('click', function(){
+       console.log(this.innerHTML);
+       if(this.innerHTML === "pig"){
+           alert("You got it right!")
+       }else{
+           alert("Give it another try!")
+       }
+   })
+}
