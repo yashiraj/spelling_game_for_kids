@@ -67,6 +67,10 @@ img {
     cursor: pointer;
 }
 
+.animal_img_container {
+    border: 5px solid red;
+}
+
 .container_animal_names{ 
     display: flex;
 }
